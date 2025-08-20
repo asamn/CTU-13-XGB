@@ -3,3 +3,5 @@ This study investigates the use of Extreme Gradient Boosting (XGBoost) for detec
 Using data derived from the CTU-13 dataset—specifically Scenario 4, which captures DDoS attacks — we construct a feature-rich dataset by merging packet level .pcap data and bidirectional NetFlow summaries. The inclusion of fine-grained features enables the model to capture nuanced traffic behavior belonging to three categories: Botnet, Legitimate, and Background. Our XGBoost classifier achieves a test accuracy of 99.82%, with high F1-scores for Background (99.90%) and Legitimate (97.70%) traffic. Botnet detection performance, however, was found to be weaker (F1-score: 89.65%). This reveals challenges tied to limited botnet representation in the dataset. 
 
 Feature importance analysis reveals the relevance of TCP flags—particularly the ACK flag—in identifying SYN-flood related botnet behavior. Despite training on only a subset of the entire dataset, these results validate the applicability of tree based learning methods to traditional network intrusion detection systems (NIDS).
+
+All datasets used in this study can be found here: https://www.stratosphereips.org/datasets-ctu13/
